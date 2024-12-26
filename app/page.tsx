@@ -4,6 +4,7 @@ import Cta3 from "@/components/sections/Cta3";
 import Faqs2 from "@/components/sections/Faqs2";
 import Features6 from "@/components/sections/Features6";
 import Features7 from "@/components/sections/Features7";
+import Features8 from "@/components/sections/Features8";
 import Hero3 from "@/components/sections/Hero3";
 import LogoCloud3 from "@/components/sections/LogoCloud3";
 import Services2 from "@/components/sections/Services2";
@@ -19,7 +20,8 @@ export default function Home() {
       <Static2 />
       <Cta3 />
       <Features6 />
-      <Features7 />
+      <Features7 text='Yayınlanmış reklam örneklerimiz' />
+      <Features8 text='Özel Hazırladığımız Reklamlarımız' />
       <Faqs2 />
       {/* <Testimonial3 /> */}
       <BackToTop target='.section-hero-3' />

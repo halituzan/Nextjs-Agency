@@ -4,13 +4,13 @@ import React from "react";
 import { Autoplay, Keyboard, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Features7({
+export default function Features8({
   text,
 }: {
   text?: string | React.ReactNode;
 }) {
   const swiperOptions = {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 20,
     slidesPerGroup: 1,
     centeredSlides: false,
@@ -20,10 +20,10 @@ export default function Features7({
     },
     breakpoints: {
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 2,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       768: {
         slidesPerView: 2,
@@ -76,20 +76,19 @@ export default function Features7({
               className='swiper slider-1 pb-3'
               modules={[Keyboard, Autoplay, Pagination, Navigation]}
             >
-              <div className='swiper-wrapper'>
+              <div className='swiper-wrapper gap-5'>
                 {/* prettier-ignore */}
                 {instaPosts.map((post) => (
                   <SwiperSlide key={post.id} className='swiper-slide'>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: `
-								<blockquote class="instagram-media" data-instgrm-version="14" style="margin: auto;">
-									<a href="https://www.instagram.com/p/${post.link}/">Instagram Post</a>
-								</blockquote>
-								<script async src="//www.instagram.com/embed.js"></script>
-							`,
-                      }}
-                    />
+                    <iframe
+                      width='560'
+                      height='315'
+                      src={`https://www.youtube.com/embed/${post.link}`}
+                      title='YouTube video player'
+                      frameBorder='0'
+                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                      allowFullScreen
+                    ></iframe>
                   </SwiperSlide>
                 ))}
               </div>
@@ -101,92 +100,16 @@ export default function Features7({
   );
 }
 const instaPosts = [
-  //   {
-  //     id: 1,
-  //     link: "CtWM7ADAyJx",
-  //   },
   {
-    id: 2,
-    link: "CwznmNFoHD5",
+    id: 1,
+    link: "mmxcMda0kuU",
   },
-  //   {
-  //     id: 3,
-  //     link: "C2Zg8C9Iu6A",
-  //   },
+  // {
+  //   id: 2,
+  //   link: "a3gz5PvgGrY",
+  // },
   {
-    id: 4,
-    link: "BVcqn3HFRS0",
-  },
-  {
-    id: 5,
-    link: "Beq-azrnxHm",
-  },
-  {
-    id: 6,
-    link: "BgHD5dLAC0d",
-  },
-  {
-    id: 7,
-    link: "BifKGhmBoXP",
-  },
-  {
-    id: 8,
-    link: "BjgxFuZB3ur",
-  },
-  {
-    id: 9,
-    link: "Bl7VpWCFE1L",
-  },
-  {
-    id: 10,
-    link: "Bm-2fkyBA8G",
-  },
-  {
-    id: 11,
-    link: "Bru7flchiR2",
-  },
-  //   {
-  //     id: 12,
-  //     link: "BuKFAtsg8xK",
-  //   },
-  {
-    id: 13,
-    link: "BwCu6VAAO_q",
-  },
-  {
-    id: 14,
-    link: "BwFffFKlZpe",
-  },
-  {
-    id: 16,
-    link: "BwHMQhXlgmQ",
-  },
-  {
-    id: 17,
-    link: "BwcxupsgdeW",
-  },
-  {
-    id: 18,
-    link: "BxIk0HCA1Mr",
-  },
-  {
-    id: 19,
-    link: "Bxu_OBigJg3",
-  },
-  {
-    id: 20,
-    link: "BzRIc5rgWCR",
-  },
-  {
-    id: 21,
-    link: "BzbP6LAgzu3",
-  },
-  {
-    id: 22,
-    link: "B0CCi7ogNFi",
-  },
-  {
-    id: 23,
-    link: "B0G5Hxrgszg",
+    id: 3,
+    link: "Dz9oCj-Q3Ek",
   },
 ];
