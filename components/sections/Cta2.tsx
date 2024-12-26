@@ -3,8 +3,9 @@ import Link from "next/link";
 import { useState } from "react";
 import CountUp from "react-countup";
 import ModalVideo from "react-modal-video";
+import VideoIcon from "../icons/VideoIcon";
 export default function Cta2() {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState("");
 
   return (
     <>
@@ -23,50 +24,48 @@ export default function Cta2() {
             </div>
             <h3 className='ds-3 my-3 fw-regular'>
               <span className=' fw-bold'>Küçük, orta, büyük </span>
-              ölçekli şirketlere <span className=' fw-bold'> çözümler </span>{" "}
+              ölçekli şirketlere <span className=' fw-bold'>
+                {" "}
+                çözümler{" "}
+              </span>{" "}
               sunuyoruz
             </h3>
           </div>
           <div className='row'>
             <div className='col-lg-5 pe-lg-0'>
-              <div className='bg-linear-1 text-center rounded-4 position-relative'>
+              <div className='bg-linear-1 text-center rounded-4 position-relative px-4'>
                 <img
                   className='rounded-4 border border-2 border-white mb-10 mt-5'
-                  src='/assets/imgs/cta-2/img-1.png'
+                  src='/assets/images/ads.jpeg'
                   alt='infinia'
                 />
                 <div className='position-absolute bottom-0 left-0 mb-3 w-100'>
                   <Link
                     href='#'
-                    onClick={() => setOpen(true)}
+                    onClick={() => setOpen("Dz9oCj-Q3Ek")}
                     scroll={false}
                     className='d-inline-flex align-items-center rounded-4 text-nowrap backdrop-filter px-3 py-2 popup-video hover-up me-3 shadow-1'
                   >
-                    <span className='backdrop-filter me-2 icon-shape icon-md rounded-circle'>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width={16}
-                        height={16}
-                        viewBox='0 0 16 16'
-                        fill='none'
-                      >
-                        <path
-                          className='stroke-dark'
-                          d='M5.0978 3.31244L12.0958 6.80342C13.077 7.29449 13.0767 8.69249 12.0954 9.18316L5.09734 12.6927C4.21074 13.136 3.16687 12.4925 3.16687 11.5027L3.16687 4.50219C3.16687 3.51217 4.2112 2.86872 5.0978 3.31244Z'
-                          stroke='#111827'
-                          strokeWidth='1.5'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        />
-                      </svg>
+                    <span className='backdrop-filter icon-shape icon-md rounded-circle'>
+                      <VideoIcon />
                     </span>
-                    <span className='fw-bold fs-7 text-900'>Video Guide</span>
                   </Link>
+                  <Link
+                    href='#'
+                    onClick={() => setOpen("mmxcMda0kuU")}
+                    scroll={false}
+                    className='d-inline-flex align-items-center rounded-4 text-nowrap backdrop-filter px-3 py-2 popup-video hover-up me-3 shadow-1'
+                  >
+                    <span className='backdrop-filter icon-shape icon-md rounded-circle'>
+                      <VideoIcon />
+                    </span>
+                  </Link>
+
                   <ModalVideo
                     channel='youtube'
-                    isOpen={isOpen}
-                    videoId='mmxcMda0kuU'
-                    onClose={() => setOpen(false)}
+                    isOpen={isOpen ? true : false}
+                    videoId={isOpen}
+                    onClose={() => setOpen("")}
                   />
                 </div>
                 <div className='position-absolute top-0 end-0'>
@@ -90,8 +89,8 @@ export default function Cta2() {
                 Hayallerinizi reklam filmine dönüştürüyoruz
               </h5>
               <p className='fs-5 text-500'>
-                Markanıza üst düzey reklam içerikleri ve olağanüstü
-                profesyonel reklam filmleri sağlayın.
+                Markanıza üst düzey reklam içerikleri ve olağanüstü profesyonel
+                reklam filmleri sağlayın.
               </p>
               <div className='d-md-flex align-items-center mt-4 mb-5'>
                 <ul className='list-unstyled phase-items mb-0'>

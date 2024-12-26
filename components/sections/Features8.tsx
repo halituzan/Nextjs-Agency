@@ -46,7 +46,7 @@ export default function Features8({
 
   return (
     <>
-      <section className='section-features-7 bg-neutral-100 section-padding'>
+      <section className='section-features-8 bg-4 section-padding'>
         <div className='container'>
           <div className='row mb-8 mb-lg-6'>
             <div className='col-lg-6'>
