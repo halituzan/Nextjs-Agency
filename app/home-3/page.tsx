@@ -11,7 +11,6 @@ import Pricing3 from "@/components/sections/Pricing3";
 import Services2 from "@/components/sections/Services2";
 import Static2 from "@/components/sections/Static2";
 
-import Layout from "@/components/layout/Layout";
 export default function Home3() {
   return (
     <>
@@ -23,10 +22,10 @@ export default function Home3() {
       <Cta3 />
       <Features6 />
       <Features7 />
-      <Pricing3 />
+      {/* <Pricing3 /> */}
       <Faqs2 />
-      <Blog3 />
-      <Newsletter2 />
+      {/* <Blog3 /> */}
+      {/* <Newsletter2 /> */}
     </>
   );
 }
