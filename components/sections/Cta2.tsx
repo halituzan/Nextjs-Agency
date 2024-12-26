@@ -23,7 +23,7 @@ export default function Cta2() {
             </div>
             <h3 className='ds-3 my-3 fw-regular'>
               <span className=' fw-bold'>Küçük, orta, büyük </span>
-              ölçekli şirketler <span className=' fw-bold'> çözüm </span>{" "}
+              ölçekli şirketlere <span className=' fw-bold'> çözümler </span>{" "}
               sunuyoruz
             </h3>
           </div>
