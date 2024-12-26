@@ -101,18 +101,18 @@ export default function Features7() {
   );
 }
 const instaPosts = [
-  {
-    id: 1,
-    link: "CtWM7ADAyJx",
-  },
+//   {
+//     id: 1,
+//     link: "CtWM7ADAyJx",
+//   },
   {
     id: 2,
     link: "CwznmNFoHD5",
   },
-  {
-    id: 3,
-    link: "C2Zg8C9Iu6A",
-  },
+//   {
+//     id: 3,
+//     link: "C2Zg8C9Iu6A",
+//   },
   {
     id: 4,
     link: "BVcqn3HFRS0",
@@ -145,10 +145,10 @@ const instaPosts = [
     id: 11,
     link: "Bru7flchiR2",
   },
-  {
-    id: 12,
-    link: "BuKFAtsg8xK",
-  },
+//   {
+//     id: 12,
+//     link: "BuKFAtsg8xK",
+//   },
   {
     id: 13,
     link: "BwCu6VAAO_q",
